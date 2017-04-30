@@ -1,0 +1,8 @@
+
+proxy:
+  build: ./line
+  ports:
+    - "8080:8080"
+  volumes:
+    - ./bait/:/usr/share/nginx/html/:ro
+    - ./logs/:/home/logs/
